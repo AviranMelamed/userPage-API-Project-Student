@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <script id="main-user-template" type="text/x-handlebars-template">
+        <div><span>{{firstName}} {{lastName}} <br> {{country}}, {{city}}</span>
+        </div>
+    </script>
+    <script id="kenya-quote-template" type="text/x-handlebars-template">
+        <div><span>{{quote}}</span>
+        </div>
+    </script>
+    <script id="poke-template" type="text/x-handlebars-template">
+        <div><span>{{name}}: <img src={{url}}></span>
+        </div>
+    </script>
+    <script id="meat-template" type="text/x-handlebars-template">
+        <div><span>{{meat}}</span>
+        </div>
+    </script>
     <div class="container">	
         <div class="user-container"></div>	
         <div class="quote-container"></div>	
@@ -25,10 +41,17 @@
             </div>	
         </div>	
         <div class="buttons">	
-            <button>Load User Data</button>	
-            <button>Display User</button>	
+            <button id="load">Load User Data</button>	
+            <button id="display">Display User</button>	
         </div>	
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src= "APIManager.js"></script>
+    <script src= "Renderer.js"></script>
+    <script src= "main.js"></script>
+
 </body>
 
 </html>
